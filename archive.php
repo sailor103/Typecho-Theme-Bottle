@@ -35,10 +35,7 @@ $this->need('header.php');
                 <?php _e('没有找到内容'); ?>
             </article>
         <?php endif; ?>
-        <ul class="am-pagination">
-            <?php $this->pageLink('&laquo; Prev','prev');?>
-            <?php $this->pageLink('Next &raquo;','next');?>
-        </ul>
+        <?php $this->pageNav('上一页','下一页',4,'...'); ?>
     </div>
     <?php $this->need('sidebar.php'); ?>
 </div>
