@@ -1,11 +1,11 @@
 <?php
 /**
- * Meizi 妹子主题（移植AmazeUI）
+ * 基于Meizi主题修改版本
  *
- * @package Meizi 妹子主题
- * @author Talent
+ * @package Bottle
+ * @author YQC
  * @version 1.0
- * @link https://miaoqiang.name
+ * @link https://yqc.im
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;

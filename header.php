@@ -27,6 +27,11 @@
 
     <!-- 通过自有函数输出HTML头部信息 -->
     <?php $this->header(); ?>
+    <!--analysis-->
+    <?php if ($this->options->mytheme_analytics):?>
+        <?php $this->options->mytheme_analytics() ?>
+    <?php endif;?>
+    <!--analysis-->
 </head>
 
 <body id="blog">

@@ -19,6 +19,9 @@ function themeConfig($form) {
 
     $socialTwitter = new Typecho_Widget_Helper_Form_Element_Text('socialTwitter', NULL, NULL, _t('Twitter'), _t('请输入 Twitter 地址'));
     $form->addInput($socialTwitter);
+
+    $mytheme_analytics = new Typecho_Widget_Helper_Form_Element_Textarea('mytheme_analytics', NULL, NULL, _t('站点统计代码'), _t('在这里填入站点统计代码'));
+    $form->addInput($mytheme_analytics);
 }
 
 function img_postthemb($thiz,$path){
