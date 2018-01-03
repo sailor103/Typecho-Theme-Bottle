@@ -32,10 +32,7 @@ $this->need('header.php');
             </div>
         </article>
         <?php endwhile; ?>
-        <ul class="am-pagination">
-            <?php $this->pageLink('&laquo; Prev','prev');?>
-            <?php $this->pageLink('Next &raquo;','next');?>
-        </ul>
+        <?php $this->pageNav('上一页','下一页',4,'...'); ?>
     </div>
     <?php $this->need('sidebar.php'); ?>
 </div>

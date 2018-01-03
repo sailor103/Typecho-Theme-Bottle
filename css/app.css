@@ -70,6 +70,34 @@ header .mobile-nav {
     color: #34b5df;
 }
 
+ol.page-navigator {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #666;
+    list-style: none;
+    font-size: 12px;
+    line-height: 30px;
+    font-family: "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif;
+}
+
+ol.page-navigator li {
+    margin: 0 5px 0 0;
+    display: inline;
+}
+
+ol.page-navigator li a {
+    padding: 2px 6px;
+    border: 1px solid #eee;
+    text-decoration: none;
+}
+
+ol.page-navigator li.current a {
+    background: #34b5df;
+    border-color: #34b5df;
+    color: #fff;
+}
+
 /**
 * comments
 */
