@@ -9,9 +9,7 @@
                     <li>尹全超，80末90初的第一代人</li>
                     <li><a href="http://malagis.com" target="_blank" >麻辣GIS</a>站长。</li>
                     <li>现就职于武汉某公司。</li>
-                    <li>主页：<a href="https://yqc.im" target="_blank">yqc.im</a></li>
-                    <li>邮箱：i@yqc.im</li>
-                    <li>企鹅：61817708</li>
+                    <li>前端er & GISer</li>
                 </ul>
             </p>
             <h2>Contact</h2>
