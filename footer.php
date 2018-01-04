@@ -48,7 +48,7 @@
             </p>
         </div>
     </div>
-    <div class="blog-text-center">© <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动</div>
+    <div class="blog-text-center">© <?php echo date('Y'); ?> <a href="<?php $this->options->siteUrl(); ?>"><?php $this->options->title() ?></a> 由 <a href="http://www.typecho.org" target="_blank">Typecho</a> 强力驱动 &nbsp;<a href="<?php $this->options->siteUrl(); ?>sitemap.xml">网站地图</a></div>
 </footer>
 
 
@@ -57,8 +57,8 @@
 <script src="https://cdn.staticfile.org/jquery/2.1.4/jquery.min.js"></script>
 <!--<![endif]-->
 <!--[if lte IE 8 ]>
-<script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
-<script src="http://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
+<script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/modernizr/2.8.3/modernizr.js"></script>
 <script src="https://cdn.staticfile.org/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="https://cdn.staticfile.org/amazeui/2.7.2/js/amazeui.min.js"></script>
