@@ -83,6 +83,10 @@ header .mobile-nav {
     margin-bottom: 1.6rem;
 }
 
+.am-article-bd a {
+  border-bottom: 1px dashed;
+}
+
 ol.page-navigator {
     margin: 0;
     padding: 0;
