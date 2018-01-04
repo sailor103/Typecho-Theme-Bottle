@@ -11,6 +11,9 @@
                         <span><?php $this->category(','); ?> &nbsp;</span>-
                         <span><a href="<?php $this->author->permalink(); ?>">@<?php $this->author(); ?> &nbsp;</a></span>-
                         <span><?php $this->date('F j, Y'); ?></span>
+                        <?php if($this->user->hasLogin()):?>
+                        <span><a href="/admin/write-post.php?cid=<?php echo $this->cid;?>">编辑</a></span>
+                        <?php endif;?>
                     </p>
                 </div>
 
