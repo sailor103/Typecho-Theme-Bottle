@@ -26,6 +26,14 @@
             <a href="<?php $this->options->feedUrl(); ?>"><span class="am-icon-rss am-icon-fw blog-icon"></span></a>
         </p>
     </div>
+
+    <?php if ($this->options->mytheme_adsider):?>
+    <!--siderbar ad-->
+    <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ">
+        <?php $this->options->mytheme_adsider() ?>
+    </div>
+    <?php endif;?>
+
     <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ">
         <h2 class="blog-title"><span><?php _e('标签云'); ?></span></h2>
         <div class="am-u-sm-12 blog-clear-padding">

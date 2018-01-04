@@ -13,6 +13,14 @@
                         <span><?php $this->date('F j, Y'); ?></span>
                     </p>
                 </div>
+
+                <?php if ($this->options->mytheme_adpost):?>
+                <!--post ad-->
+                <div class="post-ad">
+                    <?php $this->options->mytheme_adpost() ?>
+                </div>
+                <?php endif;?>
+
                 <div class="am-article-bd">
                     <?php $this->content(); ?>
                 </div>

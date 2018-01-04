@@ -22,6 +22,12 @@ function themeConfig($form) {
 
     $mytheme_analytics = new Typecho_Widget_Helper_Form_Element_Textarea('mytheme_analytics', NULL, NULL, _t('站点统计代码'), _t('在这里填入站点统计代码'));
     $form->addInput($mytheme_analytics);
+
+    $mytheme_adsider = new Typecho_Widget_Helper_Form_Element_Textarea('mytheme_adsider', NULL, NULL, _t('侧边栏广告'), _t('在这里填入侧边栏广告代码'));
+    $form->addInput($mytheme_adsider);
+
+    $mytheme_adpost = new Typecho_Widget_Helper_Form_Element_Textarea('mytheme_adpost', NULL, NULL, _t('文章页广告'), _t('在这里填入文章页广告代码'));
+    $form->addInput($mytheme_adpost);
 }
 
 function img_postthemb($thiz,$path){
