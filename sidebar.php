@@ -34,10 +34,10 @@
     </div>
     <?php endif;?>
 
-    <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ">
+    <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g side-tag">
         <h2 class="blog-title"><span><?php _e('标签云'); ?></span></h2>
         <div class="am-u-sm-12 blog-clear-padding">
-            <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 50))->to($tags); ?>
+            <?php $this->widget('Widget_Metas_Tag_Cloud', array('sort' => 'count', 'ignoreZeroCount' => true, 'desc' => true, 'limit' => 27))->to($tags); ?>
             <?php while($tags->next()): ?>
                 <a href="<?php $tags->permalink(); ?>" class="blog-tag"><?php $tags->name(); ?></a>
             <?php endwhile; ?>

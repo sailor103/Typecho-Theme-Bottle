@@ -842,14 +842,54 @@ h1 span{
     color:#fff;
     border:2px solid #34b5df;
 }
-.blog-tag {
-    background:#F3F3F3;
-    margin:0.15rem 0.15rem;
-    line-height:2.5rem;
-    float:left;
-    border: 1px solid #eee;
-    padding:0.2rem 0.8rem 0.2rem 0.8rem;
+.side-tag {
+    padding: 0;
+    margin: 0;
+    padding-left: 32px;
+    margin-bottom: 4rem;
 }
+.blog-tag {
+    background:#34b5df;
+    color: #fff;
+    margin-right: 32px;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    line-height: 32px;
+    height: 32px;
+    float:left;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+    position: relative;
+}
+
+.blog-tag:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    top: 0;
+    left: -32px;
+    position: absolute;
+    background: #fff;
+    border-width: 16px;
+    border-color: transparent #34b5df transparent transparent;
+    border-style: solid;
+}
+
+.blog-tag:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    background: #fff;
+    top: 0;
+    bottom: 0;
+    left: -3px;
+    margin: auto;
+}
+
 .blog-tag:hover {
     background:#34b5df;
     color:#fff;
