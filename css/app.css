@@ -70,6 +70,19 @@ header .mobile-nav {
     color: #34b5df;
 }
 
+.ads {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ads ins{
+    background: #fff !important;
+}
+
+.ads.post-ad {
+    margin-bottom: 1.6rem;
+}
+
 ol.page-navigator {
     margin: 0;
     padding: 0;

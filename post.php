@@ -16,7 +16,7 @@
 
                 <?php if ($this->options->mytheme_adpost):?>
                 <!--post ad-->
-                <div class="post-ad">
+                <div class="post-ad ads">
                     <?php $this->options->mytheme_adpost() ?>
                 </div>
                 <?php endif;?>
@@ -45,6 +45,14 @@
                     <a href="<?php $this->options->feedUrl(); ?>"><span class="am-icon-rss am-icon-fw blog-icon"></span></a>
                 </div>
             </div>
+
+            <?php if ($this->options->mytheme_rec):?>
+            <!--百度推荐-->
+            <div class="bd-rec">
+                <?php $this->options->mytheme_rec() ?>
+            </div>
+            <?php endif;?>
+
 
             <hr>
             <div class="am-g blog-author blog-article-margin">

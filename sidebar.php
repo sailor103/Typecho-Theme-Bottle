@@ -29,7 +29,7 @@
 
     <?php if ($this->options->mytheme_adsider):?>
     <!--siderbar ad-->
-    <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ">
+    <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ads side-ad">
         <?php $this->options->mytheme_adsider() ?>
     </div>
     <?php endif;?>

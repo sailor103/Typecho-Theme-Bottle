@@ -28,6 +28,9 @@ function themeConfig($form) {
 
     $mytheme_adpost = new Typecho_Widget_Helper_Form_Element_Textarea('mytheme_adpost', NULL, NULL, _t('文章页广告'), _t('在这里填入文章页广告代码'));
     $form->addInput($mytheme_adpost);
+
+    $mytheme_rec = new Typecho_Widget_Helper_Form_Element_Textarea('mytheme_rec', NULL, NULL, _t('百度推荐'), _t('在这里填入百度推荐代码'));
+    $form->addInput($mytheme_rec);
 }
 
 function img_postthemb($thiz,$path){
