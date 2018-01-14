@@ -52,7 +52,9 @@
             <?php if ($this->options->mytheme_rec):?>
             <!--百度推荐-->
             <div class="bd-rec">
+                <div class="rec-box">
                 <?php $this->options->mytheme_rec() ?>
+                </div>
             </div>
             <?php endif;?>
 
