@@ -1,5 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <div class="am-u-md-4 am-u-sm-12 blog-sidebar">
+    <?php if ($this->options->showAboutMe):?>
     <div class="blog-sidebar-widget blog-bor">
         <h2 class="blog-text-center blog-title"><span><?php _e('关于我'); ?></span></h2>
         <img src="<?php $this->options->avatarUrl ? $this->options->avatarUrl : $this->options->themeUrl('images/avatar.jpg'); ?>" alt="about me" class="blog-entry-img sidebar-avatar" >
@@ -8,6 +9,9 @@
             <?php $this->options->authorInfo(); ?>
         </p>
     </div>
+    <?php endif;?>
+    
+    <?php if ($this->options->showContaceMe):?>    
     <div class="blog-sidebar-widget blog-bor">
         <h2 class="blog-text-center blog-title"><span><?php _e('联系我'); ?></span></h2>
         <p>
@@ -26,6 +30,7 @@
             <a href="<?php $this->options->feedUrl(); ?>"><span class="am-icon-rss am-icon-fw blog-icon"></span></a>
         </p>
     </div>
+    <?php endif;?>    
 
     <?php if ($this->options->mytheme_adsider):?>
     <!--siderbar ad-->
@@ -34,7 +39,7 @@
     </div>
     <?php endif;?>
 
-    <?php if(!$this->is('index')):?>
+    <?php if($this->options->showNewPost && !$this->is('index')):?>
     <div class="blog-sidebar-widget blog-bor side-new-post">
         <h2 class="blog-title"><span><?php _e('最新文章'); ?></span></h2>
         <div class="am-list">
@@ -56,6 +61,7 @@
     </div>
     <?php endif;?>
 
+    <?php if ($this->options->showTagCloud && $this->is('index')):?>
     <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g side-tag">
         <h2 class="blog-title"><span><?php _e('标签云'); ?></span></h2>
         <div class="am-u-sm-12 blog-clear-padding">
@@ -65,5 +71,6 @@
             <?php endwhile; ?>
         </div>
     </div>
+    <?php endif;?>    
 
 </div>

@@ -2,6 +2,44 @@
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 
 function themeConfig($form) {
+
+    $showTagCloud = new Typecho_Widget_Helper_Form_Element_Radio(
+        'showTagCloud',
+        array(true => _t('是'), false => _t('否')),
+        'false',
+        _t('显示标签云'),
+        _t('')
+    );
+    $form->addInput($showTagCloud);
+
+    $showAboutMe = new Typecho_Widget_Helper_Form_Element_Radio(
+        'showAboutMe',
+        array(true => _t('是'), false => _t('否')),
+        'false',
+        _t('显示关于我'),
+        _t('')
+    );
+    $form->addInput($showAboutMe);
+
+    $showContaceMe = new Typecho_Widget_Helper_Form_Element_Radio(
+        'showContaceMe',
+        array(true => _t('是'), false => _t('否')),
+        'false',
+        _t('显示联系我'),
+        _t('')
+    );
+    $form->addInput($showContaceMe);    
+
+    $showNewPost = new Typecho_Widget_Helper_Form_Element_Radio(
+        'showNewPost',
+        array(true => _t('是'), false => _t('否')),
+        'false',
+        _t('显示最新文章'),
+        _t('')
+    );
+    $form->addInput($showNewPost); 
+
+
     $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('站点LOGO地址'), _t('在这里填入一个图片URL地址, 以在网站标题前加上一个LOGO'));
     $form->addInput($logoUrl);
 
