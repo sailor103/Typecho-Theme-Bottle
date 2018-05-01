@@ -6,7 +6,7 @@ $this->need('header.php');
 
 <!-- content srart -->
 <div class="am-g am-g-fixed blog-fixed blog-frame">
-    <div class="am-u-md-8 am-u-sm-12">
+    <div id="blog-left" class="am-u-md-8 am-u-sm-12">
         <h2 class="am-margin-top-lg"><?php $this->archiveTitle(array(
                 'category'  =>  _t('分类 %s 下的文章'),
                 'search'    =>  _t('包含关键字 %s 的文章'),

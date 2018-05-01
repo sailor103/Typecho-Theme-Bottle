@@ -60,6 +60,8 @@
 <script src="https://cdn.staticfile.org/amazeui/2.7.2/js/amazeui.ie8polyfill.min.js"></script>
 <![endif]-->
 <script src="https://cdn.staticfile.org/amazeui/2.7.2/js/amazeui.min.js"></script>
+<script src="<?php $this->options->themeUrl('js/jquery.simple-scroll-follow.min.js'); ?>"></script>
+<script src="<?php $this->options->themeUrl('js/app.js'); ?>"></script>
 <?php $this->footer(); ?>
 </body>
 </html>

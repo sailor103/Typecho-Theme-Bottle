@@ -30,13 +30,6 @@
             <a href="<?php $this->options->feedUrl(); ?>"><span class="am-icon-rss am-icon-fw blog-icon"></span></a>
         </p>
     </div>
-    <?php endif;?>    
-
-    <?php if ($this->options->mytheme_adsider):?>
-    <!--siderbar ad-->
-    <div class="blog-clear-margin blog-sidebar-widget blog-bor am-g ads side-ad">
-        <?php $this->options->mytheme_adsider() ?>
-    </div>
     <?php endif;?>
 
     <?php if($this->options->showNewPost && !$this->is('index')):?>
@@ -71,6 +64,13 @@
             <?php endwhile; ?>
         </div>
     </div>
-    <?php endif;?>    
+    <?php endif;?>
+
+    <?php if ($this->options->mytheme_adsider):?>
+    <!--siderbar ad-->
+    <div id="sidead" class="blog-clear-margin blog-sidebar-widget blog-bor am-g ads side-ad">
+        <?php $this->options->mytheme_adsider() ?>
+    </div>
+    <?php endif;?>
 
 </div>

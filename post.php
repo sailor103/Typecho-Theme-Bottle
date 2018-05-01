@@ -3,7 +3,7 @@
 
     <!-- content srart -->
     <div class="am-g am-g-fixed blog-fixed blog-content blog-frame">
-        <div class="am-u-md-8 am-u-sm-12">
+        <div id="blog-left" class="am-u-md-8 am-u-sm-12">
             <article class="am-article blog-article-p">
                 <div class="am-article-hd">
                     <h1 class="am-article-title blog-text-center"><?php $this->title() ?></h1>

@@ -23,3 +23,11 @@ $(function() {
   });
   
 });
+
+$(document).ready(function() {
+  $('#sidead').simpleScrollFollow({
+    min_width: 640,
+    upper_side: $('header'),
+    limit_elem: $('#blog-left')
+  });
+});
