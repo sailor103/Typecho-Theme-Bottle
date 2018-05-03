@@ -66,7 +66,7 @@
     </div>
     <?php endif;?>
 
-    <?php if ($this->options->mytheme_adsider):?>
+    <?php if (!$this->user->hasLogin() && $this->options->mytheme_adsider):?>
     <!--siderbar ad-->
     <div id="sidead" class="blog-clear-margin blog-sidebar-widget blog-bor am-g ads side-ad">
         <?php $this->options->mytheme_adsider() ?>

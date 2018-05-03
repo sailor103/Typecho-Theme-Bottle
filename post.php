@@ -17,7 +17,7 @@
                     </p>
                 </div>
 
-                <?php if ($this->options->mytheme_adpost):?>
+                <?php if (!$this->user->hasLogin() && $this->options->mytheme_adpost):?>
                 <!--post ad-->
                 <div class="post-ad ads">
                     <?php $this->options->mytheme_adpost() ?>
