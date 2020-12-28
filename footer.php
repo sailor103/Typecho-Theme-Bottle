@@ -6,7 +6,7 @@
             <h2>About</h2>
             <p>
                 <ul class="footer-ul">
-                    <li>尹全超，80末90初的第一代人</li>
+                    <li>Sailor，80末90初的第一代人</li>
                     <li><a href="http://malagis.com" target="_blank" >麻辣GIS</a>站长。</li>
                     <li>现就职于武汉某公司。</li>
                     <li>前端er & GISer</li>
